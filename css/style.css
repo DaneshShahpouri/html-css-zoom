@@ -103,6 +103,87 @@ body{
             opacity: 1;
         }
     }
+
+    @keyframes main_wrapper_Start{
+        0%{
+            height: 100%
+        }
+    
+        25%{
+            height: calc(100% - 80px);
+        }
+    
+        75%{
+            height: calc(100% - 80px);
+        }
+    
+        100%{
+            height: 100%
+        }
+    }
+    
+    @keyframes bottom_bar_start{
+        0%{
+            height: 30px;
+        }
+    
+        25%{
+            height: 80px;
+        }
+    
+        75%{
+            height: 80px;
+        }
+    
+        100%{
+            height: 30px;
+        }
+    
+    }
+    
+    @keyframes bottom_Start{
+        0%{
+            opacity: 0;
+            bottom:-60px
+        }
+    
+        25%{
+            opacity: 1;
+            bottom: 0;
+        }
+    
+        75%{
+            opacity: 1;
+            bottom: 0;
+        }
+    
+        100%{
+            opacity: 0;
+            bottom:-60px;
+        }
+    }
+
+    @keyframes icon_wrapper_top_start{
+        0%{
+            opacity: 0;
+            top:-60px
+        }
+    
+        25%{
+            opacity: 1;
+            top: 0;
+        }
+    
+        75%{
+            opacity: 1;
+            top: 0;
+        }
+    
+        100%{
+            opacity: 0;
+            top:-60px;
+        }
+    }
 /* fine ANIMATION */
 
 /* SCROLLBAR */
@@ -155,6 +236,8 @@ body{
     opacity: 0;
 
     transition: top 1s, opacity 1.3s;
+
+    animation: icon_wrapper_top_start 4s 6.4s;
 }
 
 .tool_bar_wrapper .top_bar .icon_wrapper_top .icon{
@@ -188,6 +271,8 @@ body{
     width: 100%;
     
     transition: height 1s, background-color 1s;
+
+    animation:  bottom_bar_start 4s 6.4s;
 }
 
 .tool_bar_wrapper .bottom_bar .icon_wrapper_bottom{
@@ -204,7 +289,9 @@ body{
     opacity: 0;
     background-color: rgb(34, 34, 34);
 
-    transition: bottom 1s, opacity 1.3s;    
+    transition: bottom 1s, opacity 1.3s;   
+    
+    animation: bottom_Start 4s 6.4s;
 }
 
 /* BUTTONs */
@@ -341,6 +428,8 @@ body{
     transition: height 1s;
 
     display: flex;
+
+    animation: main_wrapper_Start 4s 6.4s;
 }
 
 .main_wrapper .main{
