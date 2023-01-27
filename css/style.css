@@ -4,11 +4,46 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 .full_screen{
     background-color: black;
+    position: relative;
+
+    z-index: 1;
 
     width: 100vw;
     height: 100vh;
+
+    animation: start_all 7s;
+}
+
+.messaggio{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+
+    opacity: 0;
+    font-size:3em;
+
+    animation: mes_start 6s
+}
+
+
+.border_bottom_scritta{
+    position: absolute;
+    left: 50%;
+    top:55%;
+    transform: translateX(-50%) ;
+    width: 75%;
+    color: white;
+    opacity: 0;
+
+    animation: mes_start 6s
 }
 
 .btn{
@@ -29,6 +64,46 @@
     color: white;
 }
 /* COMMONS */
+
+/* ANIMATION */
+    @keyframes mes_start{
+
+        0%{
+            
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 0;
+            scale: 0.7;
+        }
+
+        25%{
+            opacity: 1;
+        }
+
+        75%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity:0;
+            scale:1.5
+        }
+    }
+
+
+    @keyframes start_all{
+        0%{
+            opacity: 0;
+        }
+
+        85%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+/* fine ANIMATION */
 
 /* SCROLLBAR */
 
