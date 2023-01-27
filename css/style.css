@@ -109,12 +109,10 @@
     opacity: 0;
     background-color: rgb(34, 34, 34);
 
-    transition: bottom 1s, opacity 1.3s;
-
-    
+    transition: bottom 1s, opacity 1.3s;    
 }
 
-/* LEFT BUTTON */
+/* BUTTONs */
 .tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon{
     height: 100%;
     padding:10px;
@@ -201,7 +199,7 @@
    background-color: rgb(188, 188, 188);
    color: red;
 }
-/* fine LEFT BUTTON */
+/* fine BUTTONs */
 
 
 /* fineBOTTOM BAR */
@@ -232,12 +230,15 @@
 }
 
 .tool_bar_wrapper:hover + .main_wrapper{
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
 }
 /* fineTOOLBAR_HOVER */
 
 /* fineTOOLBAR */
 
+/* --------------------------
+           MAIN 
+-------------------------- */
 .main_wrapper{
     width: 100%;
     height: 100%;
@@ -247,4 +248,35 @@
     display: flex;
 }
 
+.main_wrapper .main{
+    background-color: green;
+    height: 100%;
+    width: 100%;
 
+    overflow: auto;
+}
+
+.main_wrapper .main .wrapper_cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main_wrapper .main .wrapper_cards .card{
+    width: calc(100% / 7);
+    background-color: aqua;
+    min-width: 250px;
+}
+
+.main_wrapper .main .wrapper_cards .card .video_container{
+    width: 100%;
+    height: 0;
+    padding-bottom:56.25%;
+
+    
+}
+
+/* --------------------------
+           fine MAIN 
+-------------------------- */
