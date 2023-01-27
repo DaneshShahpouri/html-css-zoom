@@ -13,11 +13,13 @@
 
 .btn{
     background-color: transparent;
-    padding: 5px 5px 5px 10px;
+    padding: 5px;
 
     color: rgb(195, 194, 194);
     border-color: transparent;
     border-radius: 5px;
+
+    cursor: pointer;
 
     transition: background-color 0.7s, color 0.7s;
 }
@@ -96,6 +98,7 @@
 .tool_bar_wrapper .bottom_bar .icon_wrapper_bottom{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     height: 100%;
 
@@ -111,31 +114,63 @@
     
 }
 
+/* LEFT BUTTON */
 .tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon{
     height: 100%;
     padding:10px;
     
     display: flex;
+    gap: 4px;
 }
 
-.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon .icon_text{
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .center_icon .green_icon{
+    color: greenyellow;
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon>.btn{
+    padding:5px 3px 5px 5px
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .center_icon{
+    height: 100%;
+    padding:10px;
+    
+    display: flex;
+    gap: 4px;
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .right_icon{
+    height: 100%;
+    padding:10px;
+    
+    display: flex;
+    gap: 4px;
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .icon_text{
     display: flex;
     flex-flow: column;
     align-items: center;
     gap: 6px;
 }
 
-.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon .icon_text>i{
-    font-size: 1.5em;
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .icon_text>i{
+    font-size: 1.6em;
 }
-.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon .icon_bottom{
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .icon_text>span{
+    font-size: 0.6em;
+}
+
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .icon_bottom{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 6px;
 }
 
-.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon .icon_bottom>i{
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .icon_bottom>i{
     display: inline-block;
     font-size: .7em;
     background-color: transparent;
@@ -146,10 +181,29 @@
     transition: background-color 0.4s;
 }
 
-.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .left_icon .icon_bottom>i:hover{
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom  .icon_bottom>i:hover{
     font-size: .7em;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .right_icons{
+    height: 100%;
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .right_icons .end_button{
+    color: rgb(143, 0, 0);
+    background-color: rgb(67, 67, 67);
+    font-weight: 600;
+    height: 100%;
+}
+
+.tool_bar_wrapper .bottom_bar .icon_wrapper_bottom .right_icons .end_button:hover{
+   background-color: rgb(188, 188, 188);
+   color: red;
+}
+/* fine LEFT BUTTON */
+
+
 /* fineBOTTOM BAR */
 
 
